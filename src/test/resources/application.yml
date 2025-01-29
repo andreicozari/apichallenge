@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: thortful-app
+
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+
+jokes-api:
+  url: jokes-api
+

@@ -22,7 +22,7 @@ public class JokesController {
       summary = "Get a random joke",
       description = "Get a random joke."
   )
-  @GetMapping("/random-joke")
+  @GetMapping("/joke")
   @ResponseStatus(HttpStatus.OK)
   public ResponseEntity<Joke> getRandomJoke() {
     return ResponseEntity.ok(
