@@ -28,3 +28,9 @@ management:
   endpoint:
     health:
       show-details: always
+
+
+jokes-client:
+    api:
+      url: https://official-joke-api.appspot.com
+
