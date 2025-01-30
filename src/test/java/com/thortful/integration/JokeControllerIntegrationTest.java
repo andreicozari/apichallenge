@@ -20,7 +20,7 @@ public class JokeControllerIntegrationTest extends AbstractIntegrationTest {
         .type("dev")
         .build();
 
-    jokeClient.stubFor(WireMock.get("/random-joke").willReturn(
+    jokeClient.stubFor(WireMock.get("/jokes/random").willReturn(
         WireMock.aResponse().withStatus(200).withHeader("Content-Type", "application/json")
             .withBody(objectMapper.writeValueAsString(joke))));
 
